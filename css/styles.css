@@ -23,17 +23,18 @@ body{
     width: 60%;
     margin: 35px auto;
     background-image: url(../img/SetupFondo.jpg);
-    background-color: rgba(0,0,0,0.5);
-    background-blend-mode: darken;
     background-size: contain;
     background-position: center;
     background-attachment: fixed;
     color: #ffffff;
+    position: relative;  /* Necesario para que el overlay se posicione correctamente */
+    overflow: hidden;    /* Por si hay desbordes por padding interno */
 }
 .content div{
     text-align: center;
     padding: 100px;
 }
+
 h1{
     margin: 0;
     font-size: 24px;
@@ -41,8 +42,24 @@ h1{
     border-bottom: #ffffff solid 1px;
     padding-bottom: 10px;
 }
+
 h2{
     font-size: 16px;
     color: #555;
     margin-top: 10px;
+}
+
+.content .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);  /* Ajustá la opacidad a tu gusto */
+    z-index: 0;
+}
+
+.content > div {
+    position: relative;
+    z-index: 1;  /* Esto pone el contenido por encima del overlay */
 }
