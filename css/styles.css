@@ -1,0 +1,48 @@
+body{
+    background-color: #418f6888;
+    font-family: sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+}
+.header-content{
+    display: inline-block;
+    text-align: center;
+}
+.content img{
+    margin: 0;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.content{
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 60%;
+    margin: 35px auto;
+    background-image: url(../img/SetupFondo.jpg);
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: darken;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+.content div{
+    text-align: center;
+    padding: 100px;
+}
+h1{
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    border-bottom: #ffffff solid 1px;
+    padding-bottom: 10px;
+}
+h2{
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
